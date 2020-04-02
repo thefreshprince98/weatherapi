@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Jason's weather website</h1>
+          <p class="lead">With this website you can look up the weather for any city to plan your day!</p>
+        </div>
+      </div>
+</head>
+<body>
+    <!-- Api window -->
+
+    <div class="container-fluid" >
+      <div class="row">
+
+      <div class="col-md-3">
+        <h5 class="card-title">City Search</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Search for a city:</h6>
+      <input type="text" id="cityInput"  placeholder="City"> 
+      <button type="button" id="getweatherbtn" class="btn btn-primary">Search by city</button>
+
+      </div>
+    
+      <div class="col-md-9">
+        <div class="row">
+
+          <div class="col-md-12 border bg-light" id="one">
+            <h1 id="cityName"></h1>
+            <h5 id="temp"></h5>
+            <h5 id="hum"></h5>
+            <h5 id="windSpeed"></h5>
+            <h5 id="uv"></h5>
+            
+            
+          </div>  
+    <!-- forecast-->
+          <div class="col-md-12 "id="one" >
+            <h1>5-Day Forecast</h1>
+          <div class="row" id="forecast">
+            <!-- day one -->
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title1"id="day1"></h5>
+                <p id=""></p>
+                <p id="temp1"></p>
+                <p id="h1"></p>
+              </div>
+            </div>
+            <!-- day2 -->
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title1"id="day2"></h5>
+                <p class="test"></p>
+                <p id="temp2"></p>
+                <p id="h2"></p>
+              </div>
+            </div>
+            <!-- day3 -->
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title1"id="day3"></h5>
+                <p class="test"></p>
+                <p id="temp3"></p>
+                <p id="h3"></p>
+              </div>
+            </div>
+            <!-- day4 -->
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title1"id="day4"></h5>
+                <p class="test"></p>
+                <p id="temp4"></p>
+                <p id="h4"></p>
+              </div>
+            </div>
+            <!-- day5 -->
+            <div class="card"  style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title1"id="day5"></h5>
+                <p class="test"></p>
+                <p id="temp5"></p>
+                <p id="h5"></p>
+              </div>
+            </div>
+
+
+          </div>
+          
+         </div> 
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
